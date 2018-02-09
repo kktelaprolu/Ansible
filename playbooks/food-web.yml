@@ -1,0 +1,8 @@
+---
+- hosts: 172.31.26.170
+  roles:
+    - kk.httpd
+    - kk.git
+  tasks:
+    - name: cloning
+      git: repo=https://github.com/demoglot/html-samples-food.git dest=/var/www/html

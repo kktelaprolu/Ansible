@@ -1,0 +1,4 @@
+---
+# tasks file for kk.git
+  - name: installing git
+    package: name=git state=present

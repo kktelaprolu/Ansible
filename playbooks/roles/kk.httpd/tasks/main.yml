@@ -1,0 +1,7 @@
+---
+# tasks file for kk.httpd
+  - name: installing httpd
+    package: name=httpd state=present
+  - name: start service
+    service: name=httpd state=started enabled=yes
+  
