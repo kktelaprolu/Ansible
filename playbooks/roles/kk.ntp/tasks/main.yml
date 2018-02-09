@@ -1,0 +1,6 @@
+---
+# tasks file for kk.ntp
+  - name: installing ntp
+    package: name=ntp state=present
+  - name: start service
+    package: name=ntpd state=present
